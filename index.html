@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penerimaan Mahasiswa Baru</title>
+  <meta name="description" content="Pendaftaran Penerimaan Mahasiswa Baru — daftar sekarang!" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#beranda" class="brand">
+        <span class="logo">🎓</span>
+        <span>PMB Online</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#alur">Alur</a>
+        <a href="#program">Program</a>
+        <a href="#daftar" class="btn btn-nav">Daftar</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="beranda" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Tahun Akademik 2026/2027</p>
+        <h1>Penerimaan Mahasiswa Baru</h1>
+        <p class="lead">
+          Wujudkan masa depanmu bersama kami. Pendaftaran dibuka secara online —
+          cepat, mudah, dan gratis biaya pendaftaran untuk pendaftar awal.
+        </p>
+        <div class="hero-actions">
+          <a href="#daftar" class="btn btn-primary">Daftar Sekarang</a>
+          <a href="#alur" class="btn btn-ghost">Lihat Alur</a>
+        </div>
+        <div class="stats">
+          <div><strong>50+</strong><span>Program Studi</span></div>
+          <div><strong>10rb+</strong><span>Alumni</span></div>
+          <div><strong>A</strong><span>Akreditasi</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="alur" class="section">
+    <div class="container">
+      <h2 class="section-title">Alur Pendaftaran</h2>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><h3>Isi Formulir</h3><p>Lengkapi data diri pada formulir pendaftaran online.</p></div>
+        <div class="step"><span class="step-num">2</span><h3>Unggah Berkas</h3><p>Siapkan ijazah/rapor dan dokumen pendukung lainnya.</p></div>
+        <div class="step"><span class="step-num">3</span><h3>Verifikasi</h3><p>Tim kami memverifikasi data pendaftaran kamu.</p></div>
+        <div class="step"><span class="step-num">4</span><h3>Pengumuman</h3><p>Hasil seleksi diumumkan melalui email dan dashboard.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="program" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Program Studi Unggulan</h2>
+      <div class="cards">
+        <div class="card"><span class="card-icon">💻</span><h3>Teknik Informatika</h3><p>Rekayasa perangkat lunak, AI, dan keamanan siber.</p></div>
+        <div class="card"><span class="card-icon">📊</span><h3>Manajemen</h3><p>Bisnis, kewirausahaan, dan manajemen digital.</p></div>
+        <div class="card"><span class="card-icon">⚕️</span><h3>Kesehatan</h3><p>Keperawatan, farmasi, dan kesehatan masyarakat.</p></div>
+        <div class="card"><span class="card-icon">🏛️</span><h3>Hukum</h3><p>Hukum bisnis, tata negara, dan hukum pidana.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="daftar" class="section">
+    <div class="container form-wrap">
+      <h2 class="section-title">Formulir Pendaftaran</h2>
+      <p class="section-sub">Isi data di bawah ini. Data hanya tersimpan sementara di browser kamu (demo).</p>
+      <form id="pendaftaran-form" class="form" novalidate>
+        <div class="field">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama sesuai ijazah" required />
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+          </div>
+          <div class="field">
+            <label for="telepon">No. WhatsApp</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="asalSekolah">Asal Sekolah</label>
+            <input type="text" id="asalSekolah" name="asalSekolah" placeholder="Nama sekolah/SMA" required />
+          </div>
+          <div class="field">
+            <label for="prodi">Program Studi</label>
+            <select id="prodi" name="prodi" required>
+              <option value="">-- Pilih Prodi --</option>
+              <option>Teknik Informatika</option>
+              <option>Manajemen</option>
+              <option>Kesehatan</option>
+              <option>Hukum</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="alamat">Alamat</label>
+          <textarea id="alamat" name="alamat" rows="3" placeholder="Alamat domisili"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Kirim Pendaftaran</button>
+        <p id="form-msg" class="form-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 PMB Online. Dibuat untuk demo pendaftaran mahasiswa baru.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
